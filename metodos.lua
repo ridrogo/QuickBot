@@ -6,7 +6,7 @@ end
 
 local function sendRequest(url)
 
-	local dat, code = https.request(url)
+	local dat, code = HTTPS.request(url)
 	
 	if not dat then 
 		return false, code 
